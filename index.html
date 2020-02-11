@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Course tracking</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <h1>Mi lista de cursos</h1>
+      <p>Curso</p>
+      <input type="text" v-model="title" />
+      <p>Horas</p>
+      <input type="number" v-model="time" />
+      <span>{{ title }} - {{ time }}</span>
+      <p>
+        <button v-on:click="addCourse">Guardar</button>
+      </p>
+      <div>
+        <h3>Lista de Cursos</h3>
+        <p class="red">Aun no has realizado cursos</p>
+        <div>
+          <ol>
+            <li v-for="(x, i) in courses" v-bind:key="i">
+              {{ x.title }} - {{ x.time }}
+            </li>
+          </ol>
+          <hr />
+          <p>
+            Llevo <strong>{{ totalTime }}</strong> horas aprendiendo en Platzi.
+            <b>#NuncaParesDeAprender 💚</b>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
