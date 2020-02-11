@@ -1,0 +1,17 @@
+{
+  "name": "course-tracker",
+  "version": "1.0.0",
+  "description": "A simple tool to get the total time you have spend investing in yourself. Education is the only thing no one can take it from you",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "VueJS",
+    "Javascript",
+    "first",
+    "time"
+  ],
+  "author": "Samuel Mata <samuelab2@gmail.com>",
+  "license": "MIT"
+}
